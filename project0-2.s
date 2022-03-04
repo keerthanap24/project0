@@ -13,3 +13,6 @@ loop:
     syscall             # print [out_string]
     addi $t0, $t0, 1    # increment $t0
     j loop              # jump to the start of the loop
+exit:
+    li $v0, 10
+    syscall             # exit program
